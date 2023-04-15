@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>OSSNATOR</title>
+
+    <link href="/extension/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/extension/static/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="popup.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="logo d-flex justify-content-center">
+        <img class="icon" src="/images/icon-128.png" alt="Woohoo!">
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <form class="row needs-validation" novalidate>
+          <div class="col-10 offset-1">
+            <input class="form-control" id="user" type="text" name="user" required>
+            <div class="invalid-feedback">
+              Woohoo! You've to provide a valid User...
+            </div>
+          </div>
+          <div class="col-10 offset-1">
+            <button class="btn btn-primary" type="submit">GO!</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="container d-flex justify-content-end">
+        <a class="text-white" id="options-link" href="#">
+          <i class="bi bi-gear-fill"></i>
+        </a>
+      </div>
+    </footer>
+    <div class="modal" id="options-warning">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <h5 class="modal-title">
+              <i class="bi bi-gear-fill"></i>
+              Configuration
+            </h5>
+          </div>
+          <div class="modal-body">
+            <p>To start using you've to configure the extension's settings, go to options page and define the URL setting.</p>
+          </div>
+          <div class="modal-footer border-top-0">
+            <button class="btn btn-lg btn-primary" id="options-link" type="button">GO TO OPTIONS PAGE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/extension/static/js/bootstrap.bundle.min.js"></script>
+    <script src="/extension/static/js/lodash.min-4.17.21.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
