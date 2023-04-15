@@ -1,0 +1,151 @@
+body {
+    background-color: #35363e;
+    color: #fff;
+}
+
+a {
+    color: rgba(255,255,255,.5)!important;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff!important;
+    text-decoration: none;
+}
+
+.bg-dark {
+    background-color: #0f0f0f!important;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+
+    background-color: #2a2a34;
+}
+
+.sidebar h1 {
+    font-size: .75rem;
+}
+
+.nav .nav-item {
+    font-size: .75rem;
+}
+
+.nav .nav-link {
+    border-radius: 0;
+    color: #fff;
+}
+
+.nav .nav-link.active {
+    border: 1px solid #f6f6f7;
+    background-color: transparent;
+}
+
+.card {
+    background-color: transparent;
+    border-color: #2a2a34;
+}
+
+.card-header {
+    background-color: #2a2a34;
+    border-bottom: 1px solid #2a2a34;
+}
+
+.card-body {
+    background-color: #35363e;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+
+    background-color: #2a2a34;
+
+    color: #fff;
+    font-weight: 600;
+
+    border: 0;
+    border-radius: 0;
+}
+
+.btn-primary {
+    
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #2a2a34;
+    border: 0;
+}
+
+.btn-primary:focus {
+    color: #fff;
+    background-color: #2a2a34;
+    border: 0;
+    box-shadow: none;
+}
+
+.btn-primary:active {
+    color: #fff;
+    background-color: #2a2a34;
+    border: 0;
+}
+
+.btn-primary:active:focus {
+    box-shadow: none;
+}
+
+.form-control {
+    padding: 0 40px 0 16px;
+
+    width: 100%;
+    height: 45px;
+
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    font-smoothing: antialiased;
+
+
+    font-stretch: normal;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -.5px;
+
+    
+    background-color: #2a2a34;
+    color: #fff;
+
+    border: 0;
+    border-radius: 0;
+}
+
+.form-control:focus {
+    background-color: #2a2a34;
+    color: #fff;
+    border: 1px solid #fff;
+    box-shadow: none;
+}
+
+.form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus {
+    box-shadow: none;
+}
+
+.form-control.is-valid,
+.form-control.is-valid:focus,
+.was-validated .form-control:valid,
+.was-validated .form-control:valid:focus {
+    border: 1px solid #fff;
+    background-image: none;
+}
+
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
+    box-shadow: none;
+}
