@@ -12,8 +12,6 @@
   chrome.runtime.onMessage.addListener((message, sender) => {
     if (message.action === 'missing_settings')
       warning.show();
-
-    console.log(message.action);
   });
 
   // Initialize the user's settings
