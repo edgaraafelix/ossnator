@@ -1,10 +1,12 @@
 (() => {
+  const settings = {};
 
   chrome.storage.sync.get('options', (data) => {
     Object.assign(settings, data);
 
     if (_.has(settings, 'options.url') && settings.options.url.length)
       document.getElementById('url').value = settings.options.url;
+  });
 
   let generalSettings = document.querySelector('#general-settings');
 
